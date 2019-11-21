@@ -53,8 +53,8 @@ export class ModalbasicComponent implements OnInit {
           this.toastr.success('Success!');
 
           // this._router.navigate(['/innerDomain']);
-        }
-      });
+//         }
+//       });
   }
   open(content) {
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
