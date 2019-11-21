@@ -1,0 +1,66 @@
+.training-box{
+  display: inline-block;
+  vertical-align: top;
+  position: absolute;
+  min-width: 1200px;
+}
+.item-page{
+  height: 200px;
+  display: inline-block;
+  min-width: 1000px;
+  vertical-align: top;
+  margin: 0 auto;
+}
+.item2{
+  height: 200px;
+  min-width: 1000px;
+  display: inline-block;
+  margin: 0 auto;
+
+}
+.product-pic{
+  width: 250px;
+  height: 200px;
+  display: inline-block;
+  padding: 10px;
+}
+.title{
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+  min-width: 800px;
+}
+.journey{
+  padding: 15px;
+  position: absolute;
+  margin-top: 50px;
+  display: inline-block;
+  margin-left: -705px;
+  min-width: 600px;
+  color: #7F7EA4;
+  font-style: italic;
+}
+.dates{
+  padding: 15px;
+  position: absolute;
+  margin-top: 80px;
+  display: inline-block;
+  margin-left: -705px;
+  min-width: 60%;
+}
+.price{
+  padding: 15px;
+  position: absolute;
+  margin-top: 110px;
+  display: inline-block;
+  margin-left: -705px;
+  min-width: 60%;
+}
+.location{
+  padding: 15px;
+  position: absolute;
+  margin-top: 140px;
+  display: inline-block;
+  margin-left: -705px;
+  min-width: 60%;
+}

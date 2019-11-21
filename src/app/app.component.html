@@ -1,21 +1,70 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div id="top-header">
+    <p class="journey">Journey Towards A More Peaceful Mind</p>
+    <a class="home" href="/innerDomain"><strong><img src="assets/images/icons8-a_home.png" alt="facebook"></strong></a>
+    <a class="facebook" href="https://www.facebook.com/InnerDomain/?eid=ARDAy_PslE1HjchLZyZ37takVvCFucwdgjV171Rb-sY7aaPNEVdKFGavQ-FzbwSR1GLe14hVimPo8alQ&timeline_context_item_type=intro_card_work&timeline_context_item_source=528761801&fref=tag"><img src="assets/images/icons8-facebook.png" alt="facebook"></a>
+    <a class="twitter" href=""><img src="assets/images/icons8-twitter-white.png" alt="facebook"></a>
+
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+
+<div class="mainHeader">
+  <div id='logoBox' (mouseover)="showText()" (mouseleave)="hideText()">
+    <a class="logo-color" href="" routerLink="/innerDomain"> <img id="logo" src="assets/images/nevaLogo.jpeg" alt="logo">
+      <div id="message" style="display: none"><p class="hidden">Welcome to InnerDomain.  Click logo to return to the home page.</p></div>
+    </a>
+  </div>
+  <div class="navigation">
+      <nav class="nav">
+          <a class="nav-link text3 active" href="" routerLink="/innerDomain/about">About</a>
+            <a class="nav-link text3" href="#" routerLink="/innerDomain/class-schedule">Class Schedule</a>
+             <a class="nav-link text3" routerLink="/innerDomain/retreats"href="#">Retreats</a>
+             <a class="nav-link text3" routerLink="innerDomain/e-shop" href="#">e-Shop</a>
+          <!-- <button type="button" (click)="open(content)" class="btn btn-light text2">Join Our Community</button> -->
+          <!-- <a class="nav-link text2" href="#">Private Sessions</a> -->
+          <div class="dropdown">
+              <a class="btn btn-outline-secondary text2 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Ayervidic Counseling</a>
+                <a class="dropdown-item" href="#">Lifestyle Counseling</a>
+                <a class="dropdown-item" href="#">Jin Shin Jyutsu</a>
+                <a class="dropdown-item" href="#">Yoga Therapy</a>
+                <a class="dropdown-item" href="#">Private Yoga</a>
+                <a class="dropdown-item" href="#">Jyotish</a>
+                <a class="dropdown-item" href="#">Guided Meditation</a>
+              </div>
+            </div>
+          <!-- <a class="nav-link text2" href="#">Teacher Trainings</a> -->
+          <div class="dropdown train-button">
+              <a class="btn btn-outline-secondary text2 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Teacher Trainings
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">200 YTT</a>
+                <a class="dropdown-item" href="#">300 YTT</a>
+                <a class="dropdown-item" href="#">Ayurveda Certification</a>
+                <a class="dropdown-item" href="#">Yoga and Ayurveda Lifestyle Counselor</a>
+                <a class="dropdown-item" href="#">Tantra Dance</a>
+              </div>
+            </div>
+          <!-- <a class="nav-link text2" href="#">Online Offerings</a> -->
+          <div class="dropdown train-button">
+              <a class="btn btn-outline-secondary text2 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Online Offerings
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Podcasts</a>
+                <a class="dropdown-item" href="#">Videos</a>
+              </div>
+            </div>
+          <!-- <a class="nav-link text3" routerLink="innerDomain/e-shop" href="#">e-Shop</a> -->
+      </nav>
+  </div>
+
+  <app-modalbasic></app-modalbasic>
+
+</div>
 
 <router-outlet></router-outlet>
