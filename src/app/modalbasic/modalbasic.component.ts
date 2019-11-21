@@ -33,22 +33,22 @@ export class ModalbasicComponent implements OnInit {
       };
     }
     handleSubmit() {
-      this.errors = [];
-      this._http.addUser(this.user).subscribe(data => {
-        if (data['errors']) {
-          console.log(data['errors'])
-          for (var key in data['errors']) {
-            this.errors.push(data['errors'][key]['message']);
-          }
-          console.log(this.errors);
-          console.log(data);
-        } else {
-          this.user = {
-            firstName: '',
-            lastName: '',
-            email: '',
-            comment: ''
-          };
+//       this.errors = [];
+//       this._http.addUser(this.user).subscribe(data => {
+//         if (data['errors']) {
+//           console.log(data['errors'])
+//           for (var key in data['errors']) {
+//             this.errors.push(data['errors'][key]['message']);
+//           }
+//           console.log(this.errors);
+//           console.log(data);
+//         } else {
+//           this.user = {
+//             firstName: '',
+//             lastName: '',
+//             email: '',
+//             comment: ''
+//           };
           this.modalService.dismissAll();
           this.toastr.success('Success!');
 
