@@ -1,6 +1,6 @@
 #top-header{
   height: 40px;
-  min-width: 1400px;
+  min-width: 960px;
   // text-align: center;
   vertical-align: middle;
   background-color: #A2A1D8;
@@ -36,14 +36,14 @@
 }
 .mainHeader{
   // width: 100%;
-  min-width: 1400px;
+  min-width: 960px;
   height: 125px;
   font-family: 'Raleway', sans-serif;
 }
 
 #logo {
-  max-width: 400px;
-  height: 100px;
+  width: 300px;
+  height: 75px;
   margin: 0 auto;
   padding: 10px;
   position: relative;
@@ -57,7 +57,8 @@
 
 .navigation{
   display: inline-block;
-  width: 800px;
+  width: 63%;
+  // min-width: 800px;
   margin-left: 50px;
 }
 .text1{
@@ -118,7 +119,7 @@
 // }
 #logoBox{
   height: 100%;
-  max-width: 500px;
+  width: 300px;
   text-align: center;
   vertical-align: middle;
   display: inline-block;
