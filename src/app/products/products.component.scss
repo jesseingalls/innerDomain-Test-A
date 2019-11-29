@@ -4,10 +4,15 @@
   position: absolute;
   min-width: 1200px;
 }
+.cart{
+  margin-left: -150px;
+  margin-top: 80px;
+  position: absolute;
+}
 .item-page{
   height: 200px;
   display: inline-block;
-  min-width: 1000px;
+  width: 100%;
   vertical-align: top;
   margin: 0 auto;
 }
